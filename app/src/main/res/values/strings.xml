@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Penta Teachers Portal</string>
+
+    <string name="email">ENTER EMAIL</string>
+    <string name="password">ENTER PASSWORD</string>
+    <string name="submit">SUBMIT</string>
+
+    <string name="unit">UNITS</string>
+
+    <string-array name="Year">
+        <item>CLASS</item>
+        <item>CLASS 1</item>
+        <item>CLASS 2</item>
+        <item>CLASS 3</item>
+        <item>CLASS 4</item>
+        <item>CLASS 5</item>
+        <item>CLASS 6</item>
+        <item>CLASS 7</item>
+        <item>CLASS 8</item>
+    </string-array>
+
+    <string-array name="subject">
+        <item>SUBJECT</item>
+        <item>MATHS</item>
+        <item>ENGLISH</item>
+        <item>KISWAHILI</item>
+        <item>SCIENCE</item>
+        <item>SOCIAL</item>
+        <item>CRE</item>
+
+    </string-array>
+
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
+
+</resources>

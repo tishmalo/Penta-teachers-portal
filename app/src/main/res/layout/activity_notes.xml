@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notes">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barLayout1">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBar"
+            android:background="#0F2E63"
+
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background"
+        >
+
+        <RelativeLayout
+            android:layout_width="344dp"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/patientpicture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/teacher"
+
+                />
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/patientpicture"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+
+                android:hint="pdf name" />
+
+            <Button
+                android:id="@+id/nameLabel"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/name"
+                android:text="DOCUMENT" />
+
+
+            <TextView
+                android:id="@+id/pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/nameLabel"
+                android:hint="pdf name" />
+
+
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add"
+                android:text="ADD"
+                android:src="@drawable/ic_baseline_add_circle_24"
+                android:layout_below="@id/name"
+                android:layout_toRightOf="@id/nameLabel"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="150dp"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectedrecycler"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/add"
+                />
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>
